@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lanka Holiday Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel"><br><br><br><br>
+      <h1>Lanka Holiday Planner</h1>
+      <p>Plan your breaks smartly with Sri Lanka’s holiday calendar!</p><br><br>
+    
+      <div class="next-box">
+        <h2>Next Holiday</h2>
+        <div id="next-holiday">Loading...</div>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div class="filters">
+        <select id="year-select">
+          <option value="2025" selected>2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2023">2022</option>
+          <option value="2022">2021</option>
+          <option value="2021">2020</option>
+          <option value="2020">2019</option>
+        </select>
+
+        <select id="month-select">
+          <option value="01">January</option>
+          <option value="02">February</option>
+          <option value="03">March</option>
+          <option value="04">April</option>
+          <option value="05">May</option>
+          <option value="06">June</option>
+          <option value="07">July</option>
+          <option value="08">August</option>
+          <option value="09">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+        <button onclick="fetchHolidays()">Find Holidays</button>
+        
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Day</th>
+            <th>Name</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody id="holiday-table"></tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
